@@ -1,0 +1,32 @@
+-*- mode: emacs-lisp -*-
+
+;;; Budget calculations and Gantt chart:
+
+(*
+;; Months              i.    ii.   iii.
+(+           ;         123456789X12345678
+(* 18 0.5 )  ;  Peter  PPPPPPPPPPPPPPPPPP Project management; basic platform
+(* 18 0.25)  ;  Joe    JJJJJJJJJJJJJJJJJJ Basic platform; crowdsourcing, data mining
+(* 18 0.5 )  ;  Mitar  MMMMMMMMMMMMMMMMMM Peer Library, proofreading support; wiki
+(* 12 0.25)  ;  Ray    RRRRRRRRRRRR       Metadata workflow; OCR enhancements
+(* 12 0.5 )  ;  Volker       VVVVVVVVVVVV content extraction, enhancements
+(* 12 0.5 )  ;  S-DPLA       222222       Scanning
+(*  6 1.0 )  ;  S-Volk       111111111111 OCR work; content you can compute with
+);=> 46.5
+;; Hours
+40 4 
+;; Payscale
+21) ;=> 146160.0
+
+;;; Notes:
+
+; $21 per hour isn't high but it matches the payrate at Suma whole foods in the UK:
+; http://www.theguardian.com/sustainable-business/2014/aug/28/suma-the-natural-food-wholesaler-run-by-workers-on-equal-pay
+
+;;; Comments:
+
+;;; I've commented this part out to get the budget down
+;;(* 12 1.0 )  ;   S-Joe        111111111111 User interaction
+;;(* 12 1.0 )  ;   S-Mit  111111111111       Peer Library
+;;(*  6 1.0 )  ;   S-Ray  111111             Metadata wrangling
+
