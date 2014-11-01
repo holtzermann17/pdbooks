@@ -1,22 +1,22 @@
 -*- mode: emacs-lisp -*-
 
 ;;; Budget calculations and Gantt chart:
-
 (*
 ;; Months              i.    ii.   iii.
 (+           ;         123456789X12345678
-(* 18 0.5 )  ;  Peter  PPPPPPPPPPPPPPPPPP Project management; basic platform
-(* 18 0.25)  ;  Joe    JJJJJJJJJJJJJJJJJJ Basic platform; crowdsourcing, data mining
-(* 18 0.5 )  ;  Mitar  MMMMMMMMMMMMMMMMMM Peer Library, proofreading support; wiki
-(* 12 0.25)  ;  Ray    RRRRRRRRRRRR       Metadata workflow; OCR enhancements
-(* 12 0.5 )  ;  Volker       VVVVVVVVVVVV content extraction, enhancements
-(* 12 0.5 )  ;  S-DPLA       222222       Scanning
-(*  6 1.0 )  ;  S-Volk       111111111111 OCR work; content you can compute with
+(* 18 0.5 )  ; Peter   PPPPPPPPPPPPPPPPPP Project management; basic platform
+(* 18 0.25)  ; Joe     JJJJJJJJJJJJJJJJJJ Basic platform; crowdsourcing, data mining
+(* 18 0.25)  ; Mitar   MMMMMMMMMMMMMMMMMM Peer Library, proofreading support; wiki
+(* 12 0.25)  ; Ray     RRRRRRRRRRRR       Metadata workflow; OCR enhancements
+(* 12 0.5 )  ; Volker        VVVVVVVVVVVV content extraction, enhancements
+(*  6 0.5 )  ; S-Hathi       111111       Metadata for non-renewed books
+(* 12 0.5 )  ; S-DPLA        222222       Scanning
+(* 12 0.5 )  ; S-Volker      111111111111 OCR work; content you can compute with
 );=> 46.5
 ;; Hours
 40 4 
 ;; Payscale
-21) ;=> 146160.0
+21) ;=> 141120
 
 ;;; Notes:
 
@@ -30,3 +30,26 @@
 ;;(* 12 1.0 )  ;   S-Mit  111111111111       Peer Library
 ;;(*  6 1.0 )  ;   S-Ray  111111             Metadata wrangling
 
+
+;;; Phase 1:
+;; Can we bring in HT for initial phase, and metadata about books that have not been renewed.
+;; A1, and A2 types of public domain, HT best for A2.
+;; old journals as well
+;; (* 40 4 21 (* 18 0.25 ))15120.0
+
+;;; Phase 2:
+;; Even given Infty now, anything we do should be a bonus
+;; Based on Calculus-book experience, the book may take 30 to 100 hours to fix up, ideally we'd like to improve that workflow (not writing a new OCR engine).
+
+;;; Phase 3:
+;; How to get the different software working together?  E.g. would we
+;; be able to get ShareLaTeX into it?  
+;; "Integrate all of the things we built in phase 1 with things that provide an interface that people can use."
+;; - maybe develop another rendering tool in ShareLaTeX
+;; de-emph pre/post processing, fold that into proofreading
+;; - sample books: organizing, proof reading, cross-index, in Germany TOC not in copyright
+;; Need a point (E) that deals with organizing things by TOC.
+
+;;; List of software that we find helpful.
+;;; List of content that we find interesting.
+;;; Acquisition list, e.g. the GTM list
