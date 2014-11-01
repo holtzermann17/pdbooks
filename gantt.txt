@@ -1,27 +1,37 @@
 -*- mode: emacs-lisp -*-
 
 ;;; Budget calculations and Gantt chart:
+(+
+;;; Personnel
 (*
-;; Months              i.    ii.   iii.
-(+           ;         123456789X12345678
-(* 18 0.5 )  ; Peter   PPPPPPPPPPPPPPPPPP Project management; basic platform
-(* 18 0.25)  ; Joe     JJJJJJJJJJJJJJJJJJ Basic platform; crowdsourcing, data mining
-(* 18 0.25)  ; Mitar   MMMMMMMMMMMMMMMMMM Peer Library, proofreading support; wiki
-(* 12 0.25)  ; Ray     RRRRRRRRRRRR       Metadata workflow; OCR enhancements
-(* 12 0.5 )  ; Volker        VVVVVVVVVVVV content extraction, enhancements
-(*  6 0.5 )  ; S-Hathi       111111       Metadata for non-renewed books
-(* 12 0.5 )  ; S-DPLA        222222       Scanning
-(* 12 0.5 )  ; S-Volker      111111111111 OCR work; content you can compute with
+;; Months             i.    ii.   iii.
+(+          ;         123456789X12345678
+(* 18 0.5 ) ; Peter   PPPPPPPPPPPPPPPPPP Project management; basic platform
+(* 18 0.25) ; Joe     JJJJJJJJJJJJJJJJJJ Basic platform; crowdsourcing, data mining
+(* 18 0.25) ; Mitar   MMMMMMMMMMMMMMMMMM Peer Library, proofreading support; wiki
+(* 12 0.25) ; Ray     RRRRRRRRRRRR       Metadata workflow; OCR enhancements
+(* 12 0.5 ) ; Volker        VVVVVVVVVVVV Content extraction, enhancements
+(*  6 0.5 ) ; S-Hathi 111111             Metadata for non-renewed books
+(* 12 0.5 ) ; S-DPLA        222222       Scanning
+(* 12 0.5 ) ; S-Volker      111111111111 OCR work; content you can compute with
 );=> 46.5
 ;; Hours
-40 4 
+40 4
 ;; Payscale
-21) ;=> 141120
+21)
+;; Material
+5000) ; Infty OCR
+;=> 146120.0
 
 ;;; Notes:
 
 ; $21 per hour isn't high but it matches the payrate at Suma whole foods in the UK:
 ; http://www.theguardian.com/sustainable-business/2014/aug/28/suma-the-natural-food-wholesaler-run-by-workers-on-equal-pay
+
+;;; TODO:
+
+;; Set up a Tech Call with Mitar, Peter, who else?
+;; Talk about things mid-week
 
 ;;; Comments:
 
@@ -29,7 +39,6 @@
 ;;(* 12 1.0 )  ;   S-Joe        111111111111 User interaction
 ;;(* 12 1.0 )  ;   S-Mit  111111111111       Peer Library
 ;;(*  6 1.0 )  ;   S-Ray  111111             Metadata wrangling
-
 
 ;;; Phase 1:
 ;; Can we bring in HT for initial phase, and metadata about books that have not been renewed.
@@ -41,6 +50,10 @@
 ;; Even given Infty now, anything we do should be a bonus
 ;; Based on Calculus-book experience, the book may take 30 to 100 hours to fix up, ideally we'd like to improve that workflow (not writing a new OCR engine).
 
+;; 3000-8000 books;  Gutenberg estimates 85% but in practice it is something else.  Could presumably find another estimate from Hathi.
+
+;; Estimate # of PDF versus LaTeX articles in ArXiv
+
 ;;; Phase 3:
 ;; How to get the different software working together?  E.g. would we
 ;; be able to get ShareLaTeX into it?  
@@ -50,6 +63,9 @@
 ;; - sample books: organizing, proof reading, cross-index, in Germany TOC not in copyright
 ;; Need a point (E) that deals with organizing things by TOC.
 
+;;; To add:
+
 ;;; List of software that we find helpful.
 ;;; List of content that we find interesting.
-;;; Acquisition list, e.g. the GTM list
+;;; Acquisition list, e.g. the GTM TOC's
+;;; List of spin-off possibilities
