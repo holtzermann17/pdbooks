@@ -32,6 +32,8 @@
 
 ;; Set up a Tech Call with Mitar, Peter, who else?
 ;; Talk about things mid-week
+;; Create our "demo" pilot site (instance of Planetary)
+;; Talk with Bruce, Howard Cohl
 
 ;;; Comments:
 
@@ -65,7 +67,7 @@
 
 ;;; To add:
 
-;;; List of software that we find helpful.
-;;; List of content that we find interesting.
-;;; Acquisition list, e.g. the GTM TOC's
-;;; List of spin-off possibilities
+;;; List of software that we find helpful (e.g. LaTeXML, ShareLaTeX, Scribe)
+;;; List of content that we find interesting (e.g. Gauss's papers)
+;;; Acquisition list (e.g. the emulate the GTM TOC's)
+;;; List of spin-off possibilities (e.g. Tutoring)
