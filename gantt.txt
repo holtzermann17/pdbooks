@@ -31,7 +31,7 @@
 ;;; TODO:
 
 ;; Set up a Tech Call with Mitar, Peter, who else?
-;; Talk about things mid-week
+;; Talk about things mid-week (Thursday Nov 6th)
 ;; Create our "demo" pilot site (instance of Planetary)
 ;; Talk with Bruce, Howard Cohl
 
