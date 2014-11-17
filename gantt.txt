@@ -20,8 +20,10 @@
 ;; Payscale
 21)
 ;; Material
-5000) ; Infty OCR
-;=> 146120.0
+5000 ; Infty OCR
+3880 ; Other overheads
+)
+;=> 150000.0
 
 ;;; Notes:
 
