@@ -1,7 +1,10 @@
 \documentclass{article}
 \usepackage[letterpaper,margin=1.5in]{geometry}
 \usepackage{hyperref}
-
+%\usepackage{enumerate}
+\usepackage{enumitem}
+\setitemize{itemsep=-2pt}
+\setenumerate{itemsep=-2pt,label={\alph*)}}
 \def\comment#1#2{\typeout{Comment!}\footnote{Comment by #1: #2}}
 
 \begin{document}
@@ -26,7 +29,6 @@ prototypical workflow for the comprehensive recognition, correction and curation
 of digitised mathematical literature. In particular we want to pursue the
 following goals:
 \begin{enumerate}
-\def\labelenumi{\alph{enumi})}
 \item Fully digitise the mathematical content of 3-4 mathematics books that are
   in the public domain and that have already beeen suitably digitised (i.e.,
   scanned at high resolution and process with text recognition). We will use
@@ -60,7 +62,7 @@ We estimate the project will require 5 developer years spread over 2 years. We
 plan to split this time across four developers and include some additional
 amount for the Project Manager and for dissemination of the results. A more
 detailed breakdown is given below. The total costs are estimated to be
-\$490,000\comment{VS}{This is pure fiction!}.
+\$490,000\comment{VS}{This is pure fiction and probably too low!}.
 
 \paragraph{Primary Contact}\label{primary-contact}
 
@@ -68,7 +70,7 @@ Peter? AMS?
 
 \paragraph{Key members}\label{key-members}
 
-\begin{itemize}\itemsep-2pt
+\begin{itemize}
 \item \textsc{Volker Sorge} (University of Birmingham, UK)
 \item \textsc{Peter Krautzberger} (American Mathematical Society, USA)
 \item \textsc{Raymond Puzio} (Albert Einstein College of Medicine, USA) 
