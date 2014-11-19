@@ -1,88 +1,86 @@
-\documentclass{article}
+\documentclass[10pt]{article}
 \usepackage[letterpaper,margin=1.5in]{geometry}
 \usepackage{hyperref}
 \usepackage{enumitem}
 \setitemize{itemsep=-2pt}
-\setenumerate{itemsep=-2pt,label={\alph*)}}
-\def\comment#1#2{\typeout{Comment!}\footnote{Comment by #1: #2}}
+\setenumerate{itemsep=-2pt,label={\Alph*)}}
+\def\comment#1#2{\typeout{Comment! - #1: #2}}
+%%\footnote{Comment by #1: #2}}
 
 \begin{document}
+\thispagestyle{empty}
 %% Acquisition of Mathematical Content from Textbooks in the Public Domain.
 
-Dear Dr.~Weber,
+Dear Dr.~Weber:
 
-We\comment{VS}{AMS?} wish to propose a project for funding by Sloan in response
-to the report \emph{Developing a 21st Century Global Library for Mathematics
-  Research} written under the auspices of the National Research Council, and
-given further form as a new Global Digital Mathematics Library
-initiative.\comment{VS}{What's the relationship between Sloan and this?} The
-project will aim to bridge the gap between the current state of retro-digitised
-mathematical literature, where only textual content is recognised while
-mathematical formulas are omitted, and the need to transcribe the mathematical
-content fully into electronic formats to make it amenable to search algorithms,
-retrievable and reusable by researchers and computational software as well as
-fully accessible by non-visual means.
+We\comment{VS}{AMS?} wish to propose a project for funding by Sloan in
+response to the report \emph{Developing a 21st Century Global Library
+  for Mathematics Research} written under the auspices of the National
+Research Council, and given further form as a new Global Digital
+Mathematics Library initiative.\comment{VS}{What's the relationship
+  between Sloan and this?} The project will aim to bridge the gap
+between the current state of retro-digitised mathematical literature,
+where only textual content is recognised while mathematical formulas
+are omitted, and the need to make the mathematical material fully
+accessible to researchers and computational software
+(e.g. screenreaders and search tools).
 
-We aim to leverage as much as possible existing infrastructure to build a
-prototypical workflow for the comprehensive recognition, correction and curation
-of digitised mathematical literature. In particular we want to pursue the
-following goals:
+\textbf{We aim to leverage existing infrastructure to build a
+  prototypical workflow for the comprehensive recognition, correction
+  and curation of digitised mathematical literature.}  In particular
+we want to pursue the following goals:
 \begin{enumerate}
-\item Fully digitise the mathematical content of 3-4 mathematics books that are
-  in the public domain and that have already beeen suitably digitised (i.e.,
-  scanned at high resolution and process with text recognition). We will use
-  material provided by the Universiut{\"a}tsbibliothek G{\"o}ttingen that will
-  include also at least one historical book.
-\item Develop a robust process for an intial mathematical formula recognition
-  from scanned documents, by employing and possibly enhancing existing OCR
-  systems specialising in Mathematics such as Infty.
-\item Enable the manual correction of recognised mathematical formulae via
-  crowdsourcing techniques. We aim adapt an crowdsourcing platform like
-  Zooniverse.
-\item Investigate and implement methods for further enhancement of content,
-  e.g. via interlinking formulas, definition etc. within and between documents
-  as well as to outside sources like Wikipedia, Mathworld, etc., its curation
-  and its online provision to readers. We aim to adapt techniques developed in
-  the context of the EuDML project while using PlanetMath as dedicated content
-  delivery platform.
+\item Fully digitise the mathematical content of several scholarly
+  monographs and journals that are in the public domain and that have
+  already preliminary digitisations (i.e., scanned and processed with
+  basic text recognition software, but without equations).
+\item Develop a robust process for an initial mathematical formula
+  recognition from scanned documents, by employing and, where
+  relevant, extending, existing OCR systems specialising in
+  mathematics, such as {\sf Infty}.
+\item Develop a unified catalogue of public domain mathematics
+  materials, and enable the manual correction of recognised
+  mathematical formulae via crowdsourcing techniques, adapting a
+  crowdsourcing platform like Zooniverse's {\sf Scribe}.
+\item Building on techniques developed in the EuDML project,
+  investigate and implement methods for further enhancement of
+  content, e.g. via interlinking formulas and definitions, within and
+  between documents hosted on PlanetMath and PeerLibrary as well as to
+  outside sources like Arxiv, Wikipedia, Mathworld, etc., in support
+  of effective curation and online provision to readers.
 \end{enumerate}
 
-We envision that the resulting mathematical content will not only be directly
-useful for practitioners and learners, but also that in particular the inclusion
-of historical material will be of interest for users might normally not be
-considered the target audience of such an effort (e.g., retired Maths teachers),
-thereby nurturing a user community available for similar correction activities
-in the future.  As such we envision the proposed workflow to become a core
-component of a future global digital mathematics library that has a clear
-emphasis on making mathematical content amenable to electronic manipulation,
-search and computational engines.
+We envision that the resulting mathematical content will not only be
+directly useful for practitioners and learners, but also that the
+inclusion of historical material will be of interest to historians and
+other scholars and hobbyists, thereby nurturing a user community for
+future correction and enhancement activities.  As such we envision the
+proposed workflow to become a core component of a future global
+digital mathematics library with a emphasis on making high-quality
+mathematical content accessible by electronic means.
 
-We estimate the project will require 5 developer years spread over 2 years. We
-plan to split this time across four developers and include some additional
-amount for the Project Manager and for dissemination of the results. A more
-detailed breakdown is given below. The total costs are estimated to be
-\$490,000\comment{VS}{This is pure fiction and probably too low!}.
+We estimate the project will require 5 developer years spread over 2
+calendar years. We plan to split this time across four developers and
+include support for the project manager and dissemination of the
+results.  \textbf{The total costs are estimated to be
+  \$490,000.}\comment{VS}{This is pure fiction and probably too low!}
 
-\paragraph{Primary Contact}\label{primary-contact}
-
-Peter? AMS?
-
-\paragraph{Key members}\label{key-members}
-
-\begin{itemize}
-\item \textsc{Volker Sorge} (University of Birmingham, UK)
-\item \textsc{Peter Krautzberger} (American Mathematical Society, USA)
-\item \textsc{Raymond Puzio} (Albert Einstein College of Medicine, USA) 
-\item \textsc{Joseph Corneli} (Goldsmiths College, University of London, UK)
-\item \textsc{Mitar Milutinovic} (PeerLibrary \& UC Berkeley, USA) 
-\end{itemize}
+The primary contact for the group is \textsc{Peter Krautzberger}
+(American Mathematical Society, USA).  Other key members include
+\textsc{Volker Sorge} (University of Birmingham, UK), \textsc{Raymond
+  Puzio} (Albert Einstein College of Medicine \& PlanetMath.org, Ltd.,
+USA), \textsc{Joseph Corneli} (Goldsmiths College, University of
+London, UK \& PlanetMath.org, Ltd., USA), and \textsc{Mitar
+  Milutinovic} (PeerLibrary \& UC Berkeley, USA).
 
 In addition, we are supported by \textsc{Thomas Fischer} (Universiut{\"a}tsbibliothek
-G{\"o}ttingen), 
- \textsc{Michael Furlough} (Hathi Trust, USA),
- \textsc{Dan Cohen} (Digital Public Library of America, USA),
- \textsc{Robert Simpson} (Zooniverse, UK)
-
+G{\"o}ttingen, Germany), \textsc{Michael Furlough} (Hathi Trust, USA), \textsc{Dan Cohen} (Digital Public Library of America, USA), \textsc{Robert Simpson} (Zooniverse, UK).
+\begin{flushright}
+Sincerely,\\
+Volker Sorge\\
+Senior Lecturer\\
+Computer Science, University of Birmingham
+\end{flushright}
 \end{document}
 
 %%% Local Variables: 
