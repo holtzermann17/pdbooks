@@ -3,15 +3,17 @@
 ;;; Overall Gantt chart:
 
 
-;         123456 789X12 345678
-; Peter   PPPPPP PPPPPP PPPPPP Project management; basic platform
-; Joe     JJJJJJ JJJJJJ JJJJJJ Basic platform; crowdsourcing, data mining
-; Mitar   MMMMMM MMMMMM MMMMMM Peer Library, proofreading support; wiki
-; Ray     RRRRRR RRRRRR        Metadata workflow; OCR enhancements
-; Volker         VVVVVV VVVVVV Content extraction, enhancements
-; S-Hathi 111111               Metadata for non-renewed books
-; S-DPLA         222222        Scanning
-; S-Volker       111111 111111 OCR work; content you can compute with     
+;;          ;         123456 789X12 345678
+(+
+(*  18 0.25); Peter   PPPPPP PPPPPP PPPPPP Project management; basic platform
+(*  18 0.25); Joe     JJJJJJ JJJJJJ JJJJJJ Basic platform; crowdsourcing, data mining
+(*  18 0.25); Mitar   MMMMMM MMMMMM MMMMMM Peer Library, proofreading support; wiki
+(*  18 0.25); Ray     RRRRRR RRRRRR        Metadata workflow; OCR enhancements
+(*  12 0.25); Volker         VVVVVV VVVVVV Content extraction, enhancements
+(*   6 0.5 ); S-Hathi 111111               Metadata for non-renewed books
+(*  12 0.5 ); S-DPLA         222222        Scanning
+(*  12 0.5 ); S-Volker       111111 111111 OCR work; content you can compute with     
+); => 36 full-time person months
 
 ;;; Budget, as the sum over 3 phases
 
