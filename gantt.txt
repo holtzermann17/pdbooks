@@ -1,29 +1,96 @@
 -*- mode: emacs-lisp -*-
 
-;;; Budget calculations and Gantt chart:
+;;; Overall Gantt chart:
+
+
+;         123456 789X12 345678
+; Peter   PPPPPP PPPPPP PPPPPP Project management; basic platform
+; Joe     JJJJJJ JJJJJJ JJJJJJ Basic platform; crowdsourcing, data mining
+; Mitar   MMMMMM MMMMMM MMMMMM Peer Library, proofreading support; wiki
+; Ray     RRRRRR RRRRRR        Metadata workflow; OCR enhancements
+; Volker         VVVVVV VVVVVV Content extraction, enhancements
+; S-Hathi 111111               Metadata for non-renewed books
+; S-DPLA         222222        Scanning
+; S-Volker       111111 111111 OCR work; content you can compute with     
+
+;;; Budget, as the sum over 3 phases
+
+(+
+
+;; Phase 1: Library / Basic Platform
+
 (+
 ;;; Personnel
 (*
-;; Months             i.    ii.   iii.
-(+          ;         123456789X12345678
-(* 18 0.5 ) ; Peter   PPPPPPPPPPPPPPPPPP Project management; basic platform
-(* 18 0.25) ; Joe     JJJJJJJJJJJJJJJJJJ Basic platform; crowdsourcing, data mining
-(* 18 0.25) ; Mitar   MMMMMMMMMMMMMMMMMM Peer Library, proofreading support; wiki
-(* 12 0.25) ; Ray     RRRRRRRRRRRR       Metadata workflow; OCR enhancements
-(* 12 0.5 ) ; Volker        VVVVVVVVVVVV Content extraction, enhancements
-(*  6 0.5 ) ; S-Hathi 111111             Metadata for non-renewed books
-(* 12 0.5 ) ; S-DPLA        222222       Scanning
-(* 12 0.5 ) ; S-Volker      111111111111 OCR work; content you can compute with
-);=> 46.5
+;; Months             i.     
+(+          ;         123456
+(*  6 0.25) ; Peter   PPPPPP Project management; basic platform
+(*  6 0.25) ; Joe     JJJJJJ Basic platform; crowdsourcing, data mining
+(*  6 0.25) ; Mitar   MMMMMM Peer Library, proofreading support; wiki
+(*  6 0.25) ; Ray     RRRRRR Metadata workflow; OCR enhancements
+(*  0 0.25) ; Volker         Content extraction, enhancements
+(*  6 0.5 ) ; S-Hathi 111111 Metadata for non-renewed books
+(*  0 0.5 ) ; S-DPLA         Scanning
+(*  0 0.5 ) ; S-Volker       OCR work; content you can compute with
+) ;=> 46.5
 ;; Hours
 40 4
 ;; Payscale
-21)
+100)
+;; Material
+4000 ; Other overheads
+) ;=>148000.0 
+
+;; Phase 2: Content
+
+(+
+;;; Personnel
+(*
+;; Months               ii.   
+(+           ;          789X12
+(*  6 0.25)  ; Peter    PPPPPP Project management; basic platform
+(*  6 0.25)  ; Joe      JJJJJJ Basic platform; crowdsourcing, data mining
+(*  6 0.25)  ; Mitar    MMMMMM Peer Library, proofreading support; wiki
+(*  6 0.25)  ; Ray      RRRRRR Metadata workflow; OCR enhancements
+(*  0 0.25)  ; Volker   VVVVVV Content extraction, enhancements
+(*  0 0.5 )  ; S-Hathi         Metadata for non-renewed books
+(* 12 0.5 )  ; S-DPLA   222222 Scanning
+(*  6 0.5 )  ; S-Volker 111111 OCR work; content you can compute with
+) ;=> 46.5
+;; Hours
+40 4
+;; Payscale
+100)
 ;; Material
 5000 ; Infty OCR
-3880 ; Other overheads
-)
-;=> 150000.0
+3000 ; Other overheads
+) ;=> 248880.0
+
+;; Phase 3: Public facing platform with an eye to scaling up
+
+(+
+;;; Personnel
+(*
+;; Months              iii.
+(+          ;          345678
+(*  6 0.25) ; Peter    PPPPPP Project management; basic platform
+(*  6 0.25) ; Joe      JJJJJJ Basic platform; crowdsourcing, data mining
+(*  6 0.25) ; Mitar    MMMMMM Peer Library, proofreading support; wiki
+(*  0 0.25) ; Ray             Metadata workflow; OCR enhancements
+(*  6 0.25) ; Volker   VVVVVV Content extraction, enhancements
+(*  0 0.5 ) ; S-Hathi         Metadata for non-renewed books
+(*  0 0.5 ) ; S-DPLA          Scanning
+(*  6 0.5 ) ; S-Volker 111111 OCR work; content you can compute with
+) ;=> 46.5
+;; Hours
+40 4
+;; Payscale
+100)
+;; Material
+4000 ; Other overheads
+) ;=> 152880.0
+
+) ;=> 544000.0 TOTAL
 
 ;;; Notes:
 
