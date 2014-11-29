@@ -1,0 +1,107 @@
+Dear Kim:
+
+This past August, I completed a PhD at The Open University's Knowledge
+Media Institute.  My thesis was titled "Peer Produced Peer Learning: A
+Mathematics Case Study".  It deals with my work on the collaborative
+websites planetmath.org and peeragogy.org -- in short, it is an
+investigation of the potential for computer-mediated peer learning in
+mathematics.
+
+PlanetMath has been around since 2001 as a public resource: like
+Wikipedia, but dedicated to mathematics.  In 2003, it was the subject of
+a masters thesis written at Virginia Tech by my colleague Aaron Krowne.
+A big part of my own project was to rebuild the ten-year-old website,
+updating the infrastructure and adding new learning-relevant features,
+like problem sets, to the encyclopedia and forum that comprised the
+original offering.
+
+In the user studies I conducted, I collected a lot of feedback about how
+the site could be further improved.  Some of this is basic web stuff,
+for instance, a responsive layout.  There are also more advanced ideas,
+like individually-tailored diagnostics and recommendations.  Indeed, I
+prototyped some related recommendation tools for an EU project I was
+working on while finishing the PhD.  That project used a similar Drupal
++ Semantic Web infrastructure -- but I didn't have a chance to integrate
+these features into the PlanetMath site yet.
+
+I'm now a researcher at Goldsmiths College in the Computing department,
+specifically, in the Computational Creativity group, where I'm looking
+at social creativity in another EU project.  That project also has a
+mathematics focus, and it is giving me even more ideas about things to
+do with PlanetMath!
+
+I will be at Goldsmiths for at least 2 more years, and I'd like to
+make progress with PlanetMath during this time.  Ideally this would
+involve hiring a Drupal programmer who could make quick work of the
+development plan I've drafted, with some guidance from me.
+
+I requested a bid from the professional Drupal shop we worked with on
+the earlier EU grant, and the figure they quoted to me was £12000 for a
+month of work.  I'd estimate that half a year of high-quality work would
+be sufficient to:
+
+ - bring the site to a professional standard,
+ - integrate novel features like personalised recommendations,
+ - and realise one or more of the business models we've sketched.
+
+This would bring the total cost for programming support to £72000.
+PlanetMath is also currently involved with a proposal to the Sloan
+Foundation focused on retro-digitisation of public domain mathematics
+content: this would underwrite my own involvement and contribute to the
+long-term attractiveness and utility of the site.
+
+The proposed focused project would build on over a decade of practical
+work and would be supported by ongoing research, leading to a truly
+transformative learning resource.  I'm appending a brief use case to
+show more specifically what we have in mind.  The project as a whole
+seems to match the Nuffield Foundation's priorities in mathematics
+education.  Do you think I could make an appointment with you to talk
+over a potential application for funding?
+
+There is one concern that I hope is not an insurmountable obstacle.
+PlanetMath is incorporated in the US, where it has non-profit status.
+We are currently looking into creating a sister not-for-profit here in
+the UK.  For now I'm assuming that this is a prerequisite for getting
+funding here, but this is one of the things I'd like to ask about.
+
+Sincerely yours,
+Joe Corneli
+
+Illustrative PlanetMath Use Case
+
+Primary Actor: A student, Madeleine, who is trying to learn
+multivariable calculus.
+
+Main Success Scenario:
+
+1. Madeleine is enrolled in an advanced calculus course at
+university. She learns about PlanetMath from her instructor who
+recommends it as a place for extra practice with homework
+problems. Madeleine creates an account, fills in basic profile
+information, and starts solving problems that the system supplies based
+on the information she added.
+
+2. The problems that the system supplies are automatically linked to
+reference resources in PlanetMath’s encyclopedia. This expository
+material gives Madeleine easy access to the relevant mathematical
+concepts, examples, and hints needed for solving the increasingly
+difficult practice problems. However, she eventually runs into a problem
+where neither the automatically supplied information, nor her current
+knowledge of the subject, is sufficient.  She’s completely stuck on a
+problem having to do with water flow in a pipe!  Madeleine attaches a
+help request to the problem: “I understand that I have to use the two
+variables x and y to solve for water flow, but I don’t understand what
+the boundary limits of the equations would be: do I have to convert it
+to polar coordinates?”
+
+3. This request is noticed by Natalie, a mathematics graduate student
+who regularly looks at PlanetMath's Twitter feed showing “requests for
+help with advanced calculus.”  She sees that the reference resources
+linked to Madeleine’s problem are probably not sufficient, and that
+Madeleine’s idea about using polar coordinates would work.  Natalie
+makes some changes to the encyclopedia indicating that converting to
+polar coordinates can be necessary in pipe flow problems, and sketches
+an example.  Natalie then checks that this information links to
+Madeleine’s problem correctly, and alerts Madeleine to the changes. With
+this new information, Madeleine is not only able to solve her problem,
+but can proceed with confidence: she had the right idea after all!
